@@ -11,7 +11,7 @@ public class DesafioAtletas {
 
         String nome, sexo, atletaAlto = "";
 
-        double altura =0,
+        double altura = 0,
                 peso = 0,
                 pesoMedio = 0,
                 pesoAtletas = 0,
@@ -31,7 +31,8 @@ public class DesafioAtletas {
             System.out.print("Sexo: ");
             sexo = sc.next();
 
-            while (!(sexo.toUpperCase().equals("F")) && !(sexo.toUpperCase().equals("M"))) {
+            while (!sexo.equalsIgnoreCase("F")
+                    && !sexo.equalsIgnoreCase("M")) {
                 System.out.print("Valor invalido! Favor digitar F ou M: ");
                 sexo = sc.next();
             }
